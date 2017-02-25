@@ -15,13 +15,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
 
     <!-- custom css-->
-    <link href='css\styles.css' rel="stylesheet"/>
+    <link href='css\styles.css' rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 </head>
 
 <body>
   <!-- Navbar-->
-  <nav class="navbar transparent navbar-default navbar-fixed-top" id="portfolio navbar">
+  <nav class="navbar transparent navbar-invert navbar-fixed-top" id="portfolio navbar">
     <div class="container">
       <div class="navbar-header">
         <!-- Logo -->
@@ -34,7 +36,7 @@
         </button>
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse">
-        <ul class="nav navbar-nav" style="font-weight: bold;">
+        <ul class="nav navbar-nav" style="font-size: 17px;">
           <li><a href="#1">Education</a>
           <li><a href="#2">Interests</a>
           <li><a href="#3">Work Experience</a>
@@ -56,11 +58,102 @@
   </div><!-- End of Jumbotron-->
 
   <!-- Education -->
-  <div class="container">
+  	<div class="container-fluid " style = "background-color: #CCCCCC">
+  		<section>
+  			<div class="page-header" id="1">
+    				<h2 class="text-center">Education</h2>
+    			</div>
+
+    			<div class="row">
+
+    				<div class="col-sm-4 " >
+    					<img src="images/njit.png" class="img-responsive" alt="NJIT">
+    				</div>
+            <div class="col-sm-8 text-center" >
+    					<h3>NJIT - Anticipated graduation - 2018</h3>
+              <br><br><br><br><br>
+              <h4>Currently, I'm a Junior majoring in Web & Information Systems at NJIT.</h4>
+    				</div>
+          </div>
+        </section>
+    		</div><!-- End of Education -->
+
+  <!-- Interest -->
+  <div class="container-fluid" style = "background-color: gray;">
     <section>
-        <div class="page-header" id="1">
-          <h2>
-  </div><!-- End of Education-->
+        <div class="page-header" id="2">
+          <H2 class="text-center" style = "border-bottom: transparent;">Interest</h2></div>
+    			<div class="row">
+    				<div class="col-md-4 text-center">
+    							<span class="glyphicon glyphicon-tower"></span>
+    							<h4>Games</h4>
+    							<p>I like to play computer games and console games i.e.PS4, Xbox etc.</p>
+                  <br>
+    				</div>
+
+
+    				<div class="col-md-4 text-center">
+    							<span class="glyphicon glyphicon-console"></span>
+    							<h4>Website Design</h4>
+    							<p>In my free time i like to design websites and its applications.</p>
+                  <br>
+            </div>
+
+
+    				<div class="col-md-4 text-center">
+    							<span class="glyphicon glyphicon-screenshot"></span>
+    							<h4>Cars</h4>
+    							<p>I love talking about cars and knowing more about it. I drive a Mercedez-Benz C300 AMG. </p>
+
+    				</div>
+    			</div>
+    		</div><!-- end row -->
+      </section>
+  <!-- End of Education-->
+
+
+  <!-- Work -->
+  <div class="container-fluid" style = "background-color: #CCCCCC" >
+    <section>
+        <div class="page-header" id="3">
+          <H2 class="text-center">Work Experience</h2></div>
+        </div>
+        <div class="row " style = "background-color: #CCCCCC">
+          <div class="col-sm-8 text-center" >
+            <h3 >Medina=Citi</h3>
+            <br><br>
+            <h4>I have been working at Medina=Citi since summer of 2016. I'm the lead web developer for the company.</h4>
+          </div>
+          <div class="col-sm-4 " >
+            <img src="images/medina.png" class="img-responsive" alt="NJIT">
+          </div>
+        </div>
+      </section>
+  </div><!-- End of Work-->
+
+  <!-- Contact -->
+  <div class="container-fluid" style = "background-color: gray;" >
+    <section>
+      <div class="page-header text-center" id="contact">
+          <h2>Contact Information</h2>
+        </div>
+
+        <div class="row ">
+          <div class="col-sm-8 text-center " style = "font-size: 19px">
+          </br></br></br>
+            <address>
+              <strong>Palash Jain</strong></br>
+              2 Concord Dr, </br>
+              Kendall Park, NJ, 08824</br>
+              Email: pj92@njit.edu</br>
+              732(666)3025
+            </address>
+          </div>
+          <div class="col-sm-4 pull-right" >
+            <img src="images/palash11.jpg" class="img-responsive" alt="palash">
+          </div>
+        </section>
+          </div><!-- End of Contact-->
 
 
 
