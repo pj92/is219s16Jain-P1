@@ -48,3 +48,7 @@ p, div {
 {
   background-color: ##000000;
 }
+
+.glyphicon {
+    font-size: 50px;
+}

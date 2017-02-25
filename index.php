@@ -25,9 +25,10 @@
   <!-- Navbar-->
   <nav class="navbar transparent navbar-invert navbar-fixed-top" id="portfolio navbar">
     <div class="container">
-      <div class="navbar-header">
+      <div class="navbar-header" style="color:#FFF">
         <!-- Logo -->
-        <a href = ""><img class="navbar-brand" src = "images/logo.png"></a>
+        <span class="glyphicon glyphicon-console"></span>
+        <p>Palash Jain</p>
         <!--toggle menu-->
         <button type="button" class="navbar-toggle" data-toggle="collapse" data.target="#navbar-collapse">
           <span class="icon-bar"></span>
@@ -37,10 +38,10 @@
       </div>
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav" style="font-size: 17px;">
-          <li><a href="#1">Education</a>
-          <li><a href="#2">Interests</a>
-          <li><a href="#3">Work Experience</a>
-          <li><a href="#4">Contact Information</a>
+          <li><a href="#1">Education</a></li>
+          <li><a href="#2">Interests</a></li>
+          <li><a href="#3">Work Experience</a></li>
+          <li><a href="#4">Contact Information</a></li>
         </ul>
       </div>
     </div><!--End Container-->
@@ -134,7 +135,7 @@
   <!-- Contact -->
   <div class="container-fluid" style = "background-color: gray;" >
     <section>
-      <div class="page-header text-center" id="contact">
+      <div class="page-header text-center" id="4">
           <h2>Contact Information</h2>
         </div>
 
@@ -159,22 +160,19 @@
 
 
   <script scr="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script scr="js/bootstrap.js"></script>
   <script>
-  $(document).ready(function(){
-$('.nav li a').click(function() {
-  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-  && location.hostname == this.hostname) {
-    var $target = $(this.hash);
-    $target = $target.length && $target
-    || $('[name=' + this.hash.slice(1) +']');
-    if ($target.length) {
-      var targetOffset = $target.offset().top;
-      $('html,body')
-      .animate({scrollTop: targetOffset}, 1000);
-     return false;
+  $('a[href*="#"]:not([href="#"])').click(function() {
+  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
     }
   }
-});
 });
 </script>
   <!-- Latest compiled and minified JavaScript -->
